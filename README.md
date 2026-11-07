@@ -1,5 +1,7 @@
 # HelloChat (Vercel)
 
+> Projet original créé par [devffin](https://github.com/devffin) et repris et adapté pour fonctionner avec Vercel.
+
 Vercel est serverless : pas de WebSocket ni de mémoire partagée. Le chat utilise donc
 du polling HTTP (toutes les 2 s) et Redis pour stocker les messages.
 
@@ -12,7 +14,6 @@ du polling HTTP (toutes les 2 s) et Redis pour stocker les messages.
 Sans Redis, l'app marche en local (mémoire), mais pas de façon fiable sur Vercel.
 
 ## Local
-```
+```bash
 pip install -r requirements.txt
 python app.py
-```
